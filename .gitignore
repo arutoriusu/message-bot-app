@@ -105,6 +105,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+venv_message_bot_app/
 
 # Spyder project settings
 .spyderproject
