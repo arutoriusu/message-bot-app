@@ -62,7 +62,8 @@ def do_echo(update: Update, context: CallbackContext):
     for u in list_of_users:
         u = u.replace('@', '')
         find_user_id = User.objects.filter(name=u)
-        bot.send_message(find_user_id.first().pk, text)
+        if find_user_id:
+            bot.send_message(find_user_id.first().pk, text)
 
     reply_text = "Сообщение{} было отправлено людям: {}\n".format(only_text, only_users_list)
     update.message.reply_text(
