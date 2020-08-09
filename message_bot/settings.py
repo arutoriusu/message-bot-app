@@ -25,7 +25,7 @@ SECRET_KEY = 'dp$_wv04bk^6&a50az-hp56#01f&857a7yjy^l^fbe#!hcw(wi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['heyguysbot.herokuapp.com',]
+ALLOWED_HOSTS = ['heyguysbot.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
