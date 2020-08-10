@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import dj_database_url
+import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -126,3 +127,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Token of the bot
 TOKEN = '1330384131:AAGeMDbhSeqoQYrHJ0yyl9OapTOK5XF9Cj4'
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
